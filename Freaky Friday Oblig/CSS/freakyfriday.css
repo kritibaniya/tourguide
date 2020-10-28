@@ -1,0 +1,225 @@
+body{
+  background-color: rgba(30, 80, 120,0.6);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.half{
+  background-image: url("../Bilder/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+/* Source is used to add text over background image.
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text*/
+.half h1{
+background-color: rgba(255, 255, 255, 0.8);
+font-size: 3em;
+text-align: center;
+color: black;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.innhold{
+  margin-top: 60px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.innhold img{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+p{
+  font-family: sans-serif, helvetica;
+  font-size: 1.2em;
+}
+.box{
+ background-color: rgba(255, 255, 255, 0.8);
+ padding: 20px;
+}
+
+img{
+  border: 5px solid;
+  color: white;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
+figure{
+margin-left: 0px;
+}
+figcaption{
+margin-left:20px;
+width: 400px;
+height: auto;
+background-color: rgba(255, 255, 255, 0.8);
+font-size: 1.5em;
+padding: 4px;
+text-align: center;
+}
+.food{
+  background-image: url("../Bilder/spices.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.food h1{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thingstodo{
+  background-image: url("../Bilder/things.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.thingstodo h1{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.experience{
+  background-image: url("../Bilder/experience.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.experience h1{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.places{
+  background-image: url("../Bilder/placestovisit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.places h1{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.all{
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 20px;
+}
+.all p{
+  padding: 40px;
+  margin-left: 300px;
+}
+
+.all img{
+  margin: 0px;
+  float: left;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(60, 84, 102);
+  padding: 25px;
+
+}
+
+  .row::after{
+    content: " ";
+    clear: both;
+    display: table;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  [class*="col-"]{
+    float: left;
+    /*border: 1px solid grey;*/
+    margin-top: 15px;
+  }
+
+  .col-small-10 {width: 10%}
+  .col-small-20 {width: 20%;}
+  .col-small-30 {width: 30%;}
+  .col-small-40 {width: 40%;}
+  .col-small-50 {width: 50%;}
+  .col-small-60 {width: 60%;}
+  .col-small-70 {width: 70%;}
+  .col-small-80 {width: 80%;}
+  .col-small-90 {width: 90%;}
+  .col-small-100 {width: 100%;}
+
+
+  @media only screen and (max-width:1300px) {
+  .col-tall-10 {width: 10%;}
+  .col-tall-20 {width: 20%;}
+  .col-tall-30 {width: 30%;}
+  .col-tall-40 {width: 40%;}
+  .col-tall-50 {width: 50%;}
+  .col-tall-60 {width: 60%;}
+  .col-tall-70 {width: 70%;}
+  .col-tall-80 {width: 80%;}
+  .col-tall-90 {width: 90%;}
+  .col-tall-100 {width: 100%;}
+  .innhold{
+    margin: auto;
+  }
+  }
+
+  @media only screen and (max-width:850px) {
+  .col-half-10 { width: 10%}
+  .col-half-20 {width: 20%;}
+  .col-half-30 {width: 30%;}
+  .col-half-40 {width: 40%;}
+  .col-half-50 {width: 50%;}
+  .col-half-60 {width: 60%;}
+  .col-half-70 {width: 70%;}
+  .col-half-80 {width: 80%;}
+  .col-half-90 {width: 90%;}
+  .col-half-100 {width: 100%;}
+  .all p{
+    padding: 0px;
+    margin: 0px;
+  }
+  }
